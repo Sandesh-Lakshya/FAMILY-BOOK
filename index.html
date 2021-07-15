@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAMILY BOOK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Festive&family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1>Family Book</h1>
+    <img src="https://webstockreview.net/images/clipart-happy-bread-3.png" style="height: 250px;" id="image">
+    <h4 id="name">Dr S.N Pathak</h4>
+    <button onclick="update();">NEXT</button>
+    <script>
+        var names = ["Dr S.N Pathak", "Mrs Anita Pathak", "Dr Kumar Sudhanand", "Mrs Shweta Priya"];
+        var pics = ["https://webstockreview.net/images/clipart-happy-bread-3.png",
+        "https://webstockreview.net/images/grandma-clipart-looney-tunes-11.png",
+        "https://img.pngio.com/father-png-86-images-in-collection-page-1-father-png-400_750.png",
+        "https://webstockreview.net/images/clipart-face-mother-14.png"]
+
+        var i = 0;
+
+        function update (){
+            i++;
+            var no_of_members = 3;
+            if(i>no_of_members){
+                i=0;
+            }
+            document.getElementById("image").src=pics[i];
+            document.getElementById("name").innerHTML = names[i];
+        }
+    </script>
+</body>
+</html>

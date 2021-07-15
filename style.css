@@ -1,0 +1,21 @@
+body {
+    text-align: center;
+    color: white;
+    background-color: rgb(0, 119, 255);
+    text-shadow: 2px 2px black 2px;
+    stroke: black;
+}
+h1{
+    font-size: 100px;
+    font-family: 'Festive', cursive;
+}
+h4{
+    font-size: 30px;
+    font-family: 'Lobster', cursive;
+}
+button{
+    border-width: 0px;
+    background-color: darkblue;
+    color: white;
+    border-radius: 25px;
+}
